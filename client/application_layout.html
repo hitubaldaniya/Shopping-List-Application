@@ -1,0 +1,22 @@
+<template name="ApplicationLayout">
+	<div class="container theme-showcase" role="main">
+	{{#if currentUser}}
+		<div class="jumbotron">
+		<article>
+			{{> yield}}
+		</article>
+		</div>
+	{{else}}
+		<br><br>
+	
+	  <div class="jumbotron">
+        <h1>About Shopping List</h1>
+        <p>
+		<br><br>
+		Shopping List, Pantry List & To-Do List in a small, intuitive and easy-to-use app. With Out of Shopping List, your Shopping List stays with you everywhere you go and you'll have it on-hand once you're ready to go grocery shopping. The Pantry List allows you keep track of your pantry items (spices, essentials, etc...) so that you always know what you have at home. The To-Do list helps you keep track of any other items on your daily list. 
+		<br><br>
+		Please create account if you do not have an account and create your own shopping list...</p>
+      </div>		
+	{{/if}}
+	</div>
+</template>

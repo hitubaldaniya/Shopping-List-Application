@@ -1,0 +1,12 @@
+<template name="shopping_list_edit">
+    <form>
+		<input type="hidden" value="{{currentUserId}}" placeholder="USER ID" id="userid">
+		<input type="hidden" value="{{_id}}" placeholder="ID" id="trueitemid">
+		<label for="name">Name:</label><input type="text" value="{{name}}" placeholder="Shopping List Name" id="shopping_list_name" class="form-control"><br>
+		<label for="shopping_date">Shopping Date:</label><input type="text" value="{{shopping_date}}" placeholder="Shopping Date" id="datepicker" class="form-control"><br>
+		<input type="hidden" value="{{current_date}}" placeholder="Old Created Date" id="old_create_date"><br>
+		<input type="hidden" value="{{shopping_date}}" placeholder="Current Date" id="current_date"><br>
+		<input type="submit" value="Edit" class="btn btn-lg btn-danger"> 
+		<a href="/" alt="Add New" class="right btn btn-lg btn-danger">Go Back</a>
+	</form>
+</template>

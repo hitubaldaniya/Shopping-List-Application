@@ -1,0 +1,18 @@
+<template name="allshoppinglist"> 
+	<h3 style="float: left;">List of Shopping</h3>
+	<span style="float: right;">
+	<a href="/" class="btn btn-lg btn-danger" alt="Add New">Back</a>&nbsp;&nbsp;
+	<a href="/addnewshoppinglist" class="btn btn-lg btn-danger" alt="Add New">Add New Shopping List</a>
+	</span>
+	<table class="table">
+		<tr>
+			<th>Name</th><th>Creation Date</th><th>Shopping Date</th><th>Action</th></tr>
+	{{{items}}}
+	<!--{{#each items}}
+		<tr>
+			<td>{{{shopping}}}</td><td>{{current_date}}</td><td>{{{shopping_date}}}</td><td>{{{url}}}</td>
+			<td style="display:none;"><input type="hidden" value="{{_id}}" placeholder="ID" class="trueitemid"></td>
+		</tr>
+    {{/each}}-->
+	</table>
+</template>

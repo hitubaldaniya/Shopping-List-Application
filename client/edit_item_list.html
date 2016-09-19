@@ -1,0 +1,14 @@
+<template name="edit_list_item"> 
+	<form class="form-group">
+		<input type="hidden" value="{{_id}}" placeholder="ID" id="trueitemid">
+		<input type="hidden" value="{{category}}" placeholder="Category" id="category">
+		<label for="item_name">Name<span class="red_color">*</span>:</label><input type="text" value="{{item_name}}" placeholder="Eg. Banana" id="item_name" class="form-control"><br>
+		<label for="amount">Quantity<span class="red_color">*</span>:</label><input type="text" value="{{amount}}" placeholder="Eg. 1.5" id="amount" class="form-control">
+		<label for="store_name">Store Name<span class="red_color">*</span>:</label>
+			{{{stores}}}
+		<label for="expected_price">Expected Price<span class="red_color">*</span>:</label><input type="text" value="{{expected_price}}" placeholder="Eg. 1.2" id="expected_price" class="form-control">
+		<label for="total_amount">Total Amount:</label><input type="text" id="total_amount" value="{{total_amount}}" class="form-control" disabled>
+		<input type="submit" id="submitnewitem" name="submitnewitem" class="btn btn-lg btn-danger" value="Edit"> 
+		{{{back}}}
+	</form>
+</template>

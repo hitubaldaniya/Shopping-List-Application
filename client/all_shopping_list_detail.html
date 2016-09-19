@@ -1,0 +1,15 @@
+<template name="all_shopping_list_detail">
+	<div>
+		{{{url}}}
+	</div><br>
+	<input type="hidden" id="_id" value="{{_id}}">
+	<table class="table">
+		<tr><th>List Name: {{name}}</th><th>Shopping Date: {{shopping_date}}</th></tr>
+	</table>
+	<table class="table">
+		<tr><th>Item Name</th><th>Amount</th><th>Store Name</th><th>Expected Price</th></tr>
+		{{#each list_items}}
+		<tr><td>{{item_name}}</td><td>{{amount}}</td><td>{{store_name}}</td><td>{{expected_price}}</td></tr>
+		{{/each}}
+	</table>
+</template>

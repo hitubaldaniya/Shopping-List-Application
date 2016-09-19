@@ -1,0 +1,24 @@
+<template name="shopping_mode">
+	<div>
+		{{{url}}}
+	</div><br>
+	<input type="hidden" id="category" value="{{_id}}">
+	<table class="table">
+		<tr><th>List Name: {{name}}</th><th>Shopping Date: {{shopping_date}}</th></tr>
+	</table>
+	<table class="table">
+		<tr><th>Purchased</th><th>Item Name</th><th>Quantity</th><th>Store Name</th><th>Expected Price</th><th>Total Amount</th></tr>
+		{{#each list_items}}
+		<tr class="{{purchased}}">
+			<td><input type="checkbox" class="selectID" id="{{_id}}" name="shopping_item_id" value="{{_id}}" {{chk}}></td>
+			<td>{{item_name}}</td><td>{{amount}}</td><td>{{store_name}}</td><td>
+				<span class="left">{{expected_price}}</span>
+			</td>
+			<td>
+				<span class="left">{{total_amount}}</span>
+				<span class="right"><a href="#" id="{{_id}}-1" style="text-decoration: none;"  class="{{classes}} undo">Undo</a></span>
+			</td>
+		</tr>
+		{{/each}}
+	</table>
+</template>

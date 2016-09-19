@@ -1,0 +1,15 @@
+<template name="add_stores">
+    <table class="table">
+		<tr><th>Store Name</th><th></th></tr>
+	{{#each stores}}
+		<tr>
+			<td>{{store_name}}</td><td>{{{remove}}}</td>
+		</tr>
+    {{/each}}
+	</table>
+	<form>
+		<label for="store_name">Store Name<span class="red_color">*</span>:</label><input type="text" placeholder="Store Name" id="store_name" class="form-control"><br>
+		<input type="submit" id="submitstorename" name="submitstorename" class="btn btn-lg btn-danger" value="Add">
+		{{{back}}}		
+	</form>
+</template>

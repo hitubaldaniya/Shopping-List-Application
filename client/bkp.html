@@ -1,0 +1,15 @@
+<!--var list_items;
+		database.find({ category: this._id }).forEach(function(obj){
+			if(obj.purchased == 'true'){ var selected = "class = 'selected'"; }else{ var selected = "class = ''"; }
+			list_items +='<tr '+selected+'>' +
+							'<td><input type="checkbox" class="selectID" id="'+obj._id+'" name="shopping_item_id" value="'+obj._id+'"></td>' +
+							'<td>'+obj.item_name+'</td><td>'+obj.amount+'</td><td>'+obj.store_name+'</td><td>' +
+								'<span class="left">'+obj.expected_price+'</span>' +
+								'<span class="right"><a href="#" id="'+obj._id+'-1"  class="none undo">Undo</a></span>' +
+							'</td>' +
+						'</tr>';
+		});
+		return list_items;
+		
+{{{list_items}}}
+https://www.dolcenorwalk.com/media/8756/shopping.jpg-->

@@ -1,0 +1,45 @@
+/* CSS declarations go here */
+
+body {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-family: cursive;
+  background-image: url('shop.jpg');
+  background-size:100%;
+  background-attachment: fixed;
+}
+#login-name-link{ font-size:18px; border-radius: 4px; padding: 5px 10px; background-color:rgba(0, 0, 0, 0.2); text-decoration:none !important; }
+#login-name-link:hover{ color: #ffffff; }
+#login-buttons{ height:60px; }
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+.theme-showcase > p > .btn {  margin: 5px 0; }
+.theme-showcase .navbar .container {   width: auto; }
+#login-sign-in-link{ z-index: 100; position: fixed; margin: 0px 0 0 90px; background: #7580ac; color: #ffffff; padding: 10px; border-radius: 5px; text-decoration:none !important; }
+#login-buttons{ display:block !important; }
+#login-buttons .login-link-and-dropdown-list{ width:300px; margin:0 auto; }
+#login-dropdown-list{ height: auto; top:46px; width:300px; display:relative !important; }
+.red_color{ color:red; }
+.jumbotron ul li{ margin-bottom:5px; }
+input{ height:30px !important; }
+tr.true, tr.true span { text-decoration: line-through;}
+.none, .undo{ display:none; }
+.block{ display:block; }
+.left{ float:left; }
+.right{ float:right; }
+.true input{ pointer-events: none; }
+.table a:hover{ text-decoration:none; }
+a { text-decoration:none; color:#ffffff; }
+.jumbotron{ background-color: rgba(0, 0, 0, 0.2); color:#ffffff; }
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table td, .table th {
+    /*border: 1px solid #dddddd;*/
+    text-align: left; padding: 8px; line-height:28px; font-weight:normal; font-size:15px;
+}
+.table tr:nth-child(even) { background-color: rgba(140, 74, 121, 0.3); }

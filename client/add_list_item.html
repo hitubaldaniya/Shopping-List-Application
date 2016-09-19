@@ -1,0 +1,17 @@
+<template name="add_list_item"> 
+	<form class="form-group">
+		<label for="item_name">Name<span class="red_color">*</span>:</label><input type="text" placeholder="Eg. Banana" id="item_name" class="form-control"><br>
+		<label for="amount">Quantity<span class="red_color">*</span>:</label><input type="text" placeholder="Eg. 1.5" id="amount" class="form-control">
+		<label for="store_name">Store Name<span class="red_color">*</span>:</label>
+			<select id="store_name" class="form-control">
+			{{#each stores}}
+				<option value="{{store_name}}" >{{store_name}}</option>
+			{{/each}}
+			</select>
+		<label for="expected_price">Expected Price<span class="red_color">*</span>:</label><input type="text" placeholder="Eg. 1.2" id="expected_price" class="form-control">
+		<label for="total_amount">Total Amount:</label><input type="text" id="total_amount" class="form-control" disabled>
+		<input type="hidden" id="current_date" name="current_date" disabled>
+		<input type="submit" id="submitnewitem" name="submitnewitem" class="btn btn-lg btn-danger" value="Save"> 
+		{{{back}}}
+	</form>
+</template>

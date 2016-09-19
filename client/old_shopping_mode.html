@@ -1,0 +1,19 @@
+<template name="old_shopping_mode">
+	<div>
+		{{{url}}}
+	</div><br>
+	<input type="hidden" id="category" value="{{_id}}">
+	<table class="table">
+		<tr><th>List Name: {{name}}</th><th>Shopping Date: {{shopping_date}}</th></tr>
+	</table>
+	<table class="table">
+		<tr><th>Item Name</th><th>Amount</th><th>Store Name</th><th>Expected Price</th></tr>
+		{{#each list_items}}
+		<tr class="{{purchased}}">
+			<td>{{item_name}}</td><td>{{amount}}</td><td>{{store_name}}</td><td>
+				<span class="left">{{expected_price}}</span>
+			</td>
+		</tr>
+		{{/each}}
+	</table>
+</template>
